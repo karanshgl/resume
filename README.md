@@ -1,6 +1,6 @@
-# routing-example
+# Resume
 
-> A Vue.js project
+> A web resume made in vue
 
 ## Build Setup
 
