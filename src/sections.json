@@ -1,0 +1,80 @@
+{
+  "sections" : [
+    {
+      "name" : "Education",
+      "icon" : "fa-book",
+      "ul" : [
+        {
+          "title" : "B.tech in Computer Science",
+          "org" : "Indian Instiute of Information Technolongy,Ropar",
+          "time" : "2016 - Present",
+          "summary" : null
+        },
+        {
+          "title" : "Student",
+          "org" : "Bluebells School International, New Delhi",
+          "time" : "2000-2015",
+          "summary" : null
+        }
+      ],
+      "sidenote" : null
+    },
+    {
+      "name" : "Work Experience",
+      "icon" : "fa-briefcase",
+      "ul" : [
+        {
+          "title" : "Intern",
+          "org" : "Training and Placement Cell, IIT Ropar",
+          "time" : "May-June, 2017",
+          "summary" : "Helped in designing the training and placement brochure for the college."
+        }
+      ],
+      "sidenote" : null
+    },
+    {
+      "name" : "Projects",
+      "icon" : "fa-code",
+      "ul" : [
+        {
+          "title" : "Website Blocker",
+          "org" : "Python",
+          "time" : "2016",
+          "summary" : "A simple python script to block certain websites during certain times of a day."
+        },
+        {
+          "title" : "Restaurant Locator",
+          "org" : "Python",
+          "time" : "2016",
+          "summary" : "A simple python script which takes a location as input and renders a map with locations of the nearby restaurant marked, in an HTML format. The script uses Zomato API and folium library"
+        }
+      ],
+      "sidenote" : null
+    },
+    {
+      "name" : "College Participation",
+      "icon" : "fa-building",
+      "ul" : [
+        {
+          "title" : "Web Coordinator",
+          "org" : "Advitiya, IIT Ropar techfest",
+          "time" : "2016-2017",
+          "summary" : "Developed and maintained the official website of Advitiya, the technical fest of IIT Ropar."
+        },
+        {
+          "title" : "Graphic Designer",
+          "org" : "Zeitgeist and Advitiya, the cultural and technical fest of IIT Ropar",
+          "time" : "2016-2017",
+          "summary" : "Designer proposals, banners, posters, flyers for the cultural and technical fests of the college."
+        },
+        {
+          "title" : "Member",
+          "org" : "Enactus, IIT Ropar",
+          "time" : "2016-2017",
+          "summary" : "An active member of the RO project (A project which aims to bring clean drinkable water in the villages in Ropar)."
+        }
+      ],
+      "sidenote" : "Have been an active member of the coding and designing clubs of the college."
+    }
+  ]
+}

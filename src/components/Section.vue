@@ -2,31 +2,47 @@
 <template>
 
 <div class="flow">
-    <h2 class="title"><i class="fa fa-book"></i>Education</h2>
-    <div class="item">
+  <div v-for="section in info.sections" class="sec-item">
+    <h2 class="title"><i :class="section.icon" class="fa"></i>{{section.name}}</h2>
+    <div class="item" v-for="item in section.ul">
         <div class="meta">
             <div class="upper-row">
-                <h3 class="job-title">B.tech in Computer Science</h3>
-                <div class="time">2016 - Present</div>
+                <h3 class="job-title">{{item.title}}</h3>
+                <div class="time">{{item.time}}</div>
             </div>
             <!--//upper-row-->
-            <div class="org">Indian Institute of Technology, Ropar</div>
+            <div class="org">{{item.org}}</div>
         </div>
         <!--//meta-->
-        <div class="details">
+        <div class="details" v-if="item.summary!=null">
             <p>
-
+              {{item.summary}}
             </p>
         </div>
+
         <!--//details-->
     </div>
-    <!--//item-->
+    <div class="sidenote" v-if="section.sidenote!=null">
+      {{section.sidenote}}
+    </div>
+    <hr />
+  </div>
+
 </div>
 
 </template>
 
 <script>
+import section from '../sections.json'
 
+export default{
+  data(){
+    return{
+      info : section
+    }
+
+  }
+}
 
 
 </script>
@@ -75,7 +91,7 @@
     font-size: 16px;
     margin-top: 0;
     margin-bottom: 0;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .time {
@@ -99,6 +115,23 @@
 .details {
     font-family: 'Open Sans', sans-serif;
     text-align: justify;
+    color: rgb(105, 105, 105);
+    font-weight: lighter;
+}
+
+.sec-item{
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.item{
+  padding: 5px;
+}
+
+.sidenote{
+  font-weight: bold;
+  color: #2d7788;
+  padding: 5px;
 }
 
 </style>

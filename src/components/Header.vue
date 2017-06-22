@@ -68,7 +68,7 @@ export default{
   font-size: 0.8em;
 }
 
-.fa:hover{
+.fa-lg:hover{
   cursor: pointer;
   animation: link-hover 1s forwards;
 }
