@@ -1,0 +1,12 @@
+{
+  "name" : "Karan Sehgal",
+  "occupation" : "B.tech Computer Science (Almost)",
+  "location" : "New Delhi, India",
+  "links" : [
+    {"url": "https://github.com/karanshgl/", "icon" : "fa-github" },
+    {"url": "https://www.facebook.com/karan.shgl", "icon" : "fa-facebook" },
+    {"url": "https://open.spotify.com/user/karan2496", "icon" : "fa-spotify" }
+  ],
+  "email" : "karan.shgl96@gmail.com"
+
+}

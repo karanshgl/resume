@@ -4,22 +4,18 @@
     <img class="media-object img-circle center-block" alt="Karan Sehgal" src="../static/profile.jpg" itemprop="image">
   </div>
   <div class="contact-details">
-    <h3 class="name">Karan Sehgal</h3>
-    <h5>B.tech Computer Science (Almost)</h5>
-    <div class="detail">
-      <span class="icon">  <i class="fa fa-lg fa-github"></i>  </span>
+    <h3 class="name">{{info.name}}</h3>
+    <h5>{{info.occupation}}</h5>
+    <div class="detail" v-for="link in info.links">
+      <span class="icon"> <a :href="link.url"> <i class="fa fa-lg" :class="link.icon"></i></a>  </span>
     </div>
     <div class="detail">
-      <span class="icon"> <i class="fa fa-lg fa-envelope"></i> </span>
+      <span class="icon"><a :href="'mailto:'+ info.email"> <i class="fa fa-lg fa-envelope"></i></a> </span>
     </div>
+
     <div class="detail">
-      <span class="icon">   <i class="fa fa-lg fa-spotify"></i>  </span>
-    </div>
-    <div class="detail">
-      <span class="icon">  <i class="fa fa-lg fa-facebook"></i></span>
-    </div>
-    <div class="detail">
-      <span class="icon">  <i class="fa fa-lg fa-map-marker"></i>  </span>
+      <span class="icon"><a ref="location"> <i class="fa fa-lg fa-map-marker"></i> </a> </span>
+      <ui-popover trigger="location" class="location-popover" dropdownPosition="right center">{{info.location}}</ui-popover>
     </div>
   </div>
 </div>
@@ -27,6 +23,14 @@
 
 
 <script>
+import dataHead from '../head-data.json'
+export default{
+  data(){
+    return{
+      info: dataHead
+    }
+  },
+}
 </script>
 
 <style>
@@ -66,6 +70,25 @@
 
 .fa:hover{
   cursor: pointer;
-  color: #000;
+  animation: link-hover 1s forwards;
 }
+a {
+  color: #888
+}
+
+@keyframes link-hover {
+  from{
+    color: #888
+  }
+  to{
+    color: #000
+  }
+}
+
+.location-popover{
+  padding: 5px;
+  margin: 5px;
+}
+
+
 </style>
