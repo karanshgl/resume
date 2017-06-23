@@ -5,8 +5,8 @@
       "icon" : "fa-book",
       "ul" : [
         {
-          "title" : "B.tech in Computer Science",
-          "org" : "Indian Instiute of Information Technolongy,Ropar",
+          "title" : "B.Tech in Computer Science",
+          "org" : "Indian Institute of Technolongy, Ropar",
           "time" : "2016 - Present",
           "summary" : null
         },
@@ -27,7 +27,7 @@
           "title" : "Intern",
           "org" : "Training and Placement Cell, IIT Ropar",
           "time" : "May-June, 2017",
-          "summary" : "Helped in designing the training and placement brochure for the college."
+          "summary" : "Designed the training and placement brochure for the college."
         }
       ],
       "sidenote" : null

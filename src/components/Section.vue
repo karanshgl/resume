@@ -1,6 +1,5 @@
 
 <template>
-
 <div class="flow">
   <div v-for="section in info.sections" class="sec-item">
     <h2 class="title"><i :class="section.icon" class="fa"></i>{{section.name}}</h2>
@@ -50,42 +49,6 @@ export default{
 
 <style>
 
-.flow {
-    margin-top: 10px;
-}
-
-.title {
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: 500;
-    color: #2d7788;
-    position: relative;
-    margin-top: 0;
-    margin-bottom: 20px;
-}
-
-.title .fa {
-    width: 30px;
-    height: 30px;
-    margin-right: 8px;
-    display: inline-block;
-    color: #fff;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    background: #2d7788;
-    text-align: center;
-    padding-top: 8px;
-    font-size: 16px;
-    position: relative;
-    top: -2px;
-}
-
 .job-title {
     color: #3F4650;
     font-size: 16px;
@@ -117,12 +80,9 @@ export default{
     text-align: justify;
     color: rgb(105, 105, 105);
     font-weight: lighter;
+    margin-top: -8px;
 }
 
-.sec-item{
-  margin-top: 10px;
-  padding: 5px;
-}
 
 .item{
   padding: 5px;
